@@ -1,0 +1,9 @@
+/*Each command needs to run in a new terminal
+//New terminal - compiles sass on save.
+npm run compile:sass
+//Dont need to type anything else because its installed globally.
+live-server
+*/
+
+// project path
+cd /c/Users/chris/Documents/Projects/Natours

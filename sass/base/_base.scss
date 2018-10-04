@@ -1,3 +1,4 @@
+/*Put box-sizing: inherit; on the universal selector and put the box-sizing: border-box; on the body. This is helps with more expected results when using plugins and other imported css*/
 *,
 *::after,
 *::before {

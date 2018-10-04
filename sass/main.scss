@@ -1,9 +1,3 @@
-/*
-
-https://codepen.io/anon/pen/WgyKdE?editors=1100#0
-
-*/
-/*Put box-sizing: inherit; on the universal selector and put the box-sizing: border-box; on the body. This is helps with more expected results when using plugins and other imported css*/
 @import "abstracts/functions";
 @import "abstracts/mixins";
 @import "abstracts/variables";
@@ -14,7 +8,9 @@ https://codepen.io/anon/pen/WgyKdE?editors=1100#0
 @import "base/utilities";
 
 @import "components/button";
+@import "components/composition";
 
+@import "layout/grid";
 @import "layout/header";
 
 @import "pages/home";
