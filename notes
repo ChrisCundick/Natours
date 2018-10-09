@@ -7,3 +7,10 @@ live-server
 
 // project path
 cd /c/Users/chris/Documents/Projects/Natours
+
+//new branch
+git checkout -b <branch name>
+
+//merge a branch
+git checkout master
+git merge <branch to merge>
