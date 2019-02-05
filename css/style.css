@@ -1,3 +1,22 @@
+/*
+0-600px:    Phone
+600-900:    Tablet Portrait
+900-1200:   Tablet Landscape
+1200-1800:  Desktop - Default
+1800+:      Large Screen
+
+$breakpoint argument options:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+*/
+/*
+Base idea behind the manager
+@mixin respond-phone {
+    @media (max-width: 600px) { @content };
+}
+*/
 /*Put box-sizing: inherit; on the universal selector and put the box-sizing: border-box; on the body. This is helps with more expected results when using plugins and other imported css*/
 *,
 *::after,
@@ -8,6 +27,15 @@
 
 html {
   font-size: 62.5%; }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
   box-sizing: border-box; }
