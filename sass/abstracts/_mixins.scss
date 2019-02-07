@@ -17,17 +17,22 @@
 
 //Media Query Manager
 /*
-0-600px:    Phone
-600-900:    Tablet Portrait
-900-1200:   Tablet Landscape
-1200-1800:  Desktop - Default
-1800+:      Large Screen
+• 0-600px:    Phone
+• 600-900:    Tablet Portrait
+• 900-1200:   Tablet Landscape
+• 1200-1800:  Desktop - Default
+• 1800+:      Large Screen
+
+• Then converted to EM because its the most accurate through conversion during this process
+
+Change order
+• ORDER: Base + Typography > general layout + grid > page layout > components
 
 $breakpoint argument options:
-- phone
-- tab-port
-- tab-land
-- big-desktop
+• phone
+• tab-port
+• tab-land
+• big-desktop
 */
 
 /*
