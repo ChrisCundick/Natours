@@ -19,19 +19,14 @@
         transform: skewX(0);
     }
 
-    & > * {
-        transform: skewX(12deg);
-        
-        @include respond(phone) {
-            transform: skewX(0);
-        }
-    }
-
     &__shape {
+        width: 15rem;
+        height: 15rem;
         float: left;
         transform: translateX(-3rem) skewX(12deg);
         position: relative;
         overflow: hidden;
+        border-radius: 50%;
 
         @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
             -webkit-clip-path: circle(50% at 50% 50%);
@@ -49,6 +44,7 @@
     &__img {
         height: 100%;
         transform: translateX(-4rem) scale(1.4);
+        backface-visibility: hidden;
         transition: all .5s;
     }
 
@@ -71,16 +67,16 @@
         text-align: center;
         opacity: 0;
         transition: all .5s;
+        backface-visibility: hidden;
     }
 
     &:hover &__caption {
         opacity: 1;
         transform: translate(-50%, -50%);
-        
     }
 
     &:hover &__img {
-        transform: translateX(-4rem) scale(1.0);
+        transform: translateX(-4rem) scale(1);
         filter: blur(3px) brightness(80%);
     }
 }
